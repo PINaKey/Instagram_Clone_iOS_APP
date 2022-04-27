@@ -17,7 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //To set up the root view controller
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
-        window?.rootViewController = MainTabController()
+        //window?.rootViewController = MainTabController()
+        window?.rootViewController = UINavigationController(rootViewController: LoginController())
         window?.makeKeyAndVisible()
     }
 

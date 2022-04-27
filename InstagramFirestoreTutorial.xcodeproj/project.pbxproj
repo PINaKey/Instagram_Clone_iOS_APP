@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B04DED5928190DA6001C2DF5 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04DED5828190DA6001C2DF5 /* AuthenticationViewModel.swift */; };
 		B05869802817B4D4002CFCDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B058697F2817B4D4002CFCDC /* AppDelegate.swift */; };
 		B05869822817B4D4002CFCDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05869812817B4D4002CFCDC /* SceneDelegate.swift */; };
 		B05869842817B4D4002CFCDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05869832817B4D4002CFCDC /* ViewController.swift */; };
@@ -21,9 +22,14 @@
 		B0F2BDE02817BC74003FC7EE /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F2BDDF2817BC74003FC7EE /* ProfileController.swift */; };
 		B0F2BDE22817CB94003FC7EE /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F2BDE12817CB94003FC7EE /* FeedCell.swift */; };
 		B0F2BDE42817CCF8003FC7EE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F2BDE32817CCF8003FC7EE /* Extensions.swift */; };
+		B0F2BDE72817E422003FC7EE /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F2BDE62817E422003FC7EE /* LoginController.swift */; };
+		B0F2BDE92817E440003FC7EE /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F2BDE82817E440003FC7EE /* RegistrationController.swift */; };
+		B0F2BDEB28180583003FC7EE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F2BDEA28180583003FC7EE /* CustomTextField.swift */; };
+		B0F2BDED28180D99003FC7EE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F2BDEC28180D99003FC7EE /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B04DED5828190DA6001C2DF5 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		B058697C2817B4D4002CFCDC /* InstagramFirestoreTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramFirestoreTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B058697F2817B4D4002CFCDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B05869812817B4D4002CFCDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +46,10 @@
 		B0F2BDDF2817BC74003FC7EE /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		B0F2BDE12817CB94003FC7EE /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		B0F2BDE32817CCF8003FC7EE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B0F2BDE62817E422003FC7EE /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		B0F2BDE82817E440003FC7EE /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		B0F2BDEA28180583003FC7EE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		B0F2BDEC28180D99003FC7EE /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +117,7 @@
 		B0F2BDD12817B780003FC7EE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B0F2BDE52817E3FE003FC7EE /* Authentication */,
 				B0F2BDD52817B85B003FC7EE /* MainTabController.swift */,
 				B0F2BDD72817BC18003FC7EE /* FeedController.swift */,
 				B0F2BDD92817BC34003FC7EE /* SearchController.swift */,
@@ -120,6 +131,7 @@
 		B0F2BDD22817B783003FC7EE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B04DED5828190DA6001C2DF5 /* AuthenticationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -128,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				B0F2BDE12817CB94003FC7EE /* FeedCell.swift */,
+				B0F2BDEA28180583003FC7EE /* CustomTextField.swift */,
+				B0F2BDEC28180D99003FC7EE /* CustomButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,6 +151,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B0F2BDE52817E3FE003FC7EE /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				B0F2BDE62817E422003FC7EE /* LoginController.swift */,
+				B0F2BDE82817E440003FC7EE /* RegistrationController.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,8 +233,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F2BDEB28180583003FC7EE /* CustomTextField.swift in Sources */,
 				B05869842817B4D4002CFCDC /* ViewController.swift in Sources */,
+				B0F2BDE72817E422003FC7EE /* LoginController.swift in Sources */,
 				B0F2BDE22817CB94003FC7EE /* FeedCell.swift in Sources */,
+				B04DED5928190DA6001C2DF5 /* AuthenticationViewModel.swift in Sources */,
 				B0F2BDDC2817BC4B003FC7EE /* ImageSelectorController.swift in Sources */,
 				B0F2BDDE2817BC63003FC7EE /* NotificationController.swift in Sources */,
 				B0F2BDDA2817BC34003FC7EE /* SearchController.swift in Sources */,
@@ -221,6 +247,8 @@
 				B0F2BDD62817B85B003FC7EE /* MainTabController.swift in Sources */,
 				B0F2BDE42817CCF8003FC7EE /* Extensions.swift in Sources */,
 				B05869822817B4D4002CFCDC /* SceneDelegate.swift in Sources */,
+				B0F2BDE92817E440003FC7EE /* RegistrationController.swift in Sources */,
+				B0F2BDED28180D99003FC7EE /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
