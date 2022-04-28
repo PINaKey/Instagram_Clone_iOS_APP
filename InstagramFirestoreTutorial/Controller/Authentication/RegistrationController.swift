@@ -11,6 +11,7 @@ import UIKit
 class RegistrationController: UIViewController {
     
     private var viewModel = RegistrationViewModel()
+    private var profileImage: UIImage?
     
     //MARK: - Properties
     
@@ -45,6 +46,8 @@ class RegistrationController: UIViewController {
          button.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1).withAlphaComponent(0.5)
          button.setHeight(50)
          button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        button.addTarget(self, action: #selector(handleSignUp), for: .touchUpInside)
+        button.isEnabled = false
          return button
     }()
     
@@ -89,6 +92,25 @@ class RegistrationController: UIViewController {
         picker.delegate = self
         picker.allowsEditing = true
         present(picker, animated: true, completion: nil)
+    }
+    
+    @objc func handleSignUp(){
+        guard let email = emailTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        guard let fullName = fullNameTextField.text else { return }
+        guard let userName = userNameTextField.text else { return }
+        guard let profileImage = self.profileImage else { return }
+        
+        let credentials = AuthCredentials(email: email, password: password, fullName: fullName, userName: userName, profileImage: profileImage)
+        
+        AuthService.registerUser(withCredentials: credentials) { error in
+            if let error = error {
+                print("DEBUG: Failed to register user \(error.localizedDescription)")
+                return
+            }
+            
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     //MARK: - Helper
@@ -136,6 +158,8 @@ extension RegistrationController: UIImagePickerControllerDelegate, UINavigationC
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         guard let selectedImage = info[.editedImage] as? UIImage else {return}
+        profileImage = selectedImage
+        
         plusPhotoButton.layer.cornerRadius = plusPhotoButton.frame.width / 2
         plusPhotoButton.layer.masksToBounds = true
         plusPhotoButton.layer.borderColor = UIColor.white.cgColor
