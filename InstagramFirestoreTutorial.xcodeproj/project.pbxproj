@@ -15,6 +15,8 @@
 		B05869872817B4D4002CFCDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B05869852817B4D4002CFCDC /* Main.storyboard */; };
 		B05869892817B4D6002CFCDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B05869882817B4D6002CFCDC /* Assets.xcassets */; };
 		B058698C2817B4D6002CFCDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B058698A2817B4D6002CFCDC /* LaunchScreen.storyboard */; };
+		B059F07F281ACC160074B186 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B059F07E281ACC160074B186 /* ProfileCell.swift */; };
+		B059F081281ACC3A0074B186 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B059F080281ACC3A0074B186 /* ProfileHeader.swift */; };
 		B0784DF6281A957B00E060EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0784DF5281A957B00E060EE /* GoogleService-Info.plist */; };
 		B0A11D8F281AA95800B41639 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A11D8E281AA95800B41639 /* ImageUploader.swift */; };
 		B0A11D91281AA97000B41639 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A11D90281AA97000B41639 /* AuthService.swift */; };
@@ -45,6 +47,8 @@
 		B05869882817B4D6002CFCDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B058698B2817B4D6002CFCDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B058698D2817B4D6002CFCDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B059F07E281ACC160074B186 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		B059F080281ACC3A0074B186 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		B0784DF5281A957B00E060EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B0A11D8E281AA95800B41639 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		B0A11D90281AA97000B41639 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -130,6 +134,15 @@
 			path = InstagramFirestoreTutorial;
 			sourceTree = "<group>";
 		};
+		B059F082281ACC4A0074B186 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B059F07E281ACC160074B186 /* ProfileCell.swift */,
+				B059F080281ACC3A0074B186 /* ProfileHeader.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		B0A11D8C281AA92400B41639 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +192,7 @@
 		B0F2BDD32817B787003FC7EE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B059F082281ACC4A0074B186 /* Profile */,
 				B0F2BDE12817CB94003FC7EE /* FeedCell.swift */,
 				B0F2BDEA28180583003FC7EE /* CustomTextField.swift */,
 				B0F2BDEC28180D99003FC7EE /* CustomButton.swift */,
@@ -319,6 +333,7 @@
 				B0F2BDE22817CB94003FC7EE /* FeedCell.swift in Sources */,
 				B04DED5928190DA6001C2DF5 /* AuthenticationViewModel.swift in Sources */,
 				B0F2BDDC2817BC4B003FC7EE /* ImageSelectorController.swift in Sources */,
+				B059F081281ACC3A0074B186 /* ProfileHeader.swift in Sources */,
 				B0F2BDDE2817BC63003FC7EE /* NotificationController.swift in Sources */,
 				B0F2BDDA2817BC34003FC7EE /* SearchController.swift in Sources */,
 				B05869802817B4D4002CFCDC /* AppDelegate.swift in Sources */,
@@ -326,6 +341,7 @@
 				B0F2BDD82817BC18003FC7EE /* FeedController.swift in Sources */,
 				B0F2BDD62817B85B003FC7EE /* MainTabController.swift in Sources */,
 				B0F2BDE42817CCF8003FC7EE /* Extensions.swift in Sources */,
+				B059F07F281ACC160074B186 /* ProfileCell.swift in Sources */,
 				B05869822817B4D4002CFCDC /* SceneDelegate.swift in Sources */,
 				B0F2BDE92817E440003FC7EE /* RegistrationController.swift in Sources */,
 				B0F2BDED28180D99003FC7EE /* CustomButton.swift in Sources */,
